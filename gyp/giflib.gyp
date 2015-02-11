@@ -31,9 +31,9 @@
               '-w',
             ],
             'sources': [
-              '../third-party/giflib/dgif_lib.c',
-              '../third-party/giflib/gifalloc.c',
-              '../third-party/giflib/gif_err.c',
+              '../third-party/giflib/lib/dgif_lib.c',
+              '../third-party/giflib/lib/gifalloc.c',
+              '../third-party/giflib/lib/gif_err.c',
             ],
           }, {  # not skia_giflib_static
             'type': 'none',

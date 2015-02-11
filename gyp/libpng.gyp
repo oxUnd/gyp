@@ -17,12 +17,6 @@
             'include_dirs': [
               '../third-party/libpng',
             ],
-            'dependencies': [
-              'zlib.gyp:zlib',
-            ],
-            'export_dependent_settings': [
-              'zlib.gyp:zlib',
-            ],
             'direct_dependent_settings': {
               'include_dirs': [
                 '../third-party/libpng',
@@ -31,6 +25,10 @@
             'cflags': [
               '-w',
               '-fvisibility=hidden',
+            ],
+            'libraries': [
+              '-lz',
+              '-lm'
             ],
             'sources': [
               '../third-party/libpng/png.c',
