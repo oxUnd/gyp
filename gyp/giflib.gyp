@@ -6,13 +6,13 @@
             'HAVE_CONFIG_H',
         ],
         'include_dirs': [
-            '../third-party/giflib',
+            '../third-party/giflib/lib',
         ],
         'dependencies': [
         ],
         'direct_dependent_settings': {
             'include_dirs': [
-                '../third-party/giflib',
+                '../third-party/giflib/lib',
             ],
         },
         'cflags': [
