@@ -24,3 +24,9 @@ wget "http://cznic.dl.sourceforge.net/project/giflib/giflib-4.x/giflib-4.2.3.tar
 tar xvf giflib.tar.gz
 mv -f giflib-4.2.3 ./third-party/giflib
 rm giflib.tar.gz
+
+## zlib ##
+wget "http://heanet.dl.sourceforge.net/project/libpng/zlib/1.2.8/zlib-1.2.8.tar.gz" -O "./zlib.tar.gz"
+tar xvf zlib.tar.gz
+mv -f zlib-1.2.8 ./third-party/zlib
+rm zlib.tar.gz

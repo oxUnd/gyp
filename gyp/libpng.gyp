@@ -14,8 +14,10 @@
             '-w',
             '-fvisibility=hidden',
         ],
+        'dependencies': [
+            'zlib.gyp:zlib'
+        ],
         'libraries': [
-            '-lz',
             '-lm'
         ],
         'sources': [
