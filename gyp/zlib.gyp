@@ -5,11 +5,11 @@
         'include_dirs': [
             '../third-party/zlib/'
         ],
-        'direct_dependent_settings': [
+        'direct_dependent_settings': {
             'include_dirs': [
                 '../third-party/zlib/'
             ]
-        ],
+        },
         'sources': [
             '../third-party/zlib/adler32.c',
             '../third-party/zlib/compress.c',
