@@ -23,3 +23,9 @@
         }]
     }
     ```
+
+## F&Q
+
+- for windows
+    - giflib, 'not found `unistd.h`', you can delete `#include <unistd.io>`
+    - libjpeg-turbo, must need `CMAKE`, can download from http://www.cmake.org/download/
