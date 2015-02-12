@@ -7,7 +7,14 @@
 
     if dependent on `zlib`, you can add the following code to `binding.gyp`
 
+    ```json
+    "dependencies": [
+        "./gyp/zlib.gyp:zlib"
+    ]
     ```
+    Sample:
+
+    ```json
     {
         targets: [{
             "target_name": "addon",
