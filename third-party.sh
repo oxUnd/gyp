@@ -8,7 +8,11 @@ mv -f libpng-1.6.16 ./third-party/libpng
 cd ./third-party/libpng/
     cp ./scripts/pnglibconf.h.prebuilt ./pnglibconf.h
     # close warning
-    sed -i '' "s/#define PNG_WARNINGS_SUPPORTED/\/\/#define PNG_WARNINGS_SUPPORTED/" ./pnglibconf.h
+    if [ "$(uname)" = "Linux" ]; then
+        sed -i  "s/#define PNG_WARNINGS_SUPPORTED/\/\/#define PNG_WARNINGS_SUPPORTED/" ./pnglibconf.h
+    else
+        sed -i '' "s/#define PNG_WARNINGS_SUPPORTED/\/\/#define PNG_WARNINGS_SUPPORTED/" ./pnglibconf.h
+    fi
 cd -
 rm libpng.tar.gz
 
