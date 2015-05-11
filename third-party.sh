@@ -7,6 +7,7 @@ mv -f libpng-1.6.16 ./third-party/libpng
 #fix Linux compile error
 cd ./third-party/libpng/
     cp ./scripts/pnglibconf.h.prebuilt ./pnglibconf.h
+    sed -i '' "s/#define PNG_sRGB_PROFILE_CHECKS 2/#define PNG_sRGB_PROFILE_CHECKS 0/" ./pnglibconf.h
 cd -
 rm libpng.tar.gz
 
