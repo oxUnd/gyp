@@ -7,7 +7,8 @@ mv -f libpng-1.6.16 ./third-party/libpng
 #fix Linux compile error
 cd ./third-party/libpng/
     cp ./scripts/pnglibconf.h.prebuilt ./pnglibconf.h
-    sed -i '' "s/#define PNG_sRGB_PROFILE_CHECKS 2/#define PNG_sRGB_PROFILE_CHECKS 0/" ./pnglibconf.h
+    # close warning
+    sed -i '' "s/#define PNG_WARNINGS_SUPPORTED/\/\/#define PNG_WARNINGS_SUPPORTED/" ./pnglibconf.h
 cd -
 rm libpng.tar.gz
 
@@ -16,7 +17,7 @@ wget "http://jaist.dl.sourceforge.net/project/libjpeg-turbo/1.4.0/libjpeg-turbo-
 tar xvf libjpeg-turbo.tar.gz
 mv -f libjpeg-turbo-1.4.0 ./third-party/libjpeg-turbo
 cd ./third-party/libjpeg-turbo
-    cmake .
+    cmake . || (echo ':MUST: need cmake' && exit 1)
 cd -
 rm libjpeg-turbo.tar.gz
 
