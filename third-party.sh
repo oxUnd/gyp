@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ## libpng ##
-wget "http://downloads.sourceforge.net/project/libpng/libpng16/1.6.18/libpng-1.6.18.tar.gz" -O "./libpng.tar.gz"
+wget "http://netix.dl.sourceforge.net/project/libpng/libpng16/1.6.20/libpng-1.6.20.tar.gz" -O "./libpng.tar.gz"
 tar xvf libpng.tar.gz
 mv -f libpng-1.6.18 ./third-party/libpng
 #fix Linux compile error
