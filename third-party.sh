@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 ## libpng ##
-wget "http://netix.dl.sourceforge.net/project/libpng/libpng16/1.6.20/libpng-1.6.20.tar.gz" -O "./libpng.tar.gz"
+wget "http://downloads.sourceforge.net/project/libpng/libpng16/1.6.20/libpng-1.6.20.tar.gz" -O "./libpng.tar.gz"
 tar xvf libpng.tar.gz
-mv -f libpng-1.6.18 ./third-party/libpng
+mv -f libpng-1.6.20 ./third-party/libpng
 #fix Linux compile error
 cd ./third-party/libpng/
     cp ./scripts/pnglibconf.h.prebuilt ./pnglibconf.h
