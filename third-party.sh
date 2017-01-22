@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 ## libpng ##
-wget "http://downloads.sourceforge.net/project/libpng/libpng16/1.6.20/libpng-1.6.20.tar.gz" -O "./libpng.tar.gz"
+wget "https://codeload.github.com/glennrp/libpng/tar.gz/v1.6.28" -O "./libpng.tar.gz"
 tar xvf libpng.tar.gz
-mv -f libpng-1.6.20 ./third-party/libpng
+mv -f libpng-1.6.28 ./third-party/libpng
 #fix Linux compile error
 cd ./third-party/libpng/
     cp ./scripts/pnglibconf.h.prebuilt ./pnglibconf.h
@@ -26,9 +26,9 @@ cd -
 rm libjpeg-turbo.tar.gz
 
 ## giflib ##
-wget "http://downloads.sourceforge.net/project/giflib/giflib-4.x/giflib-4.2.3.tar.gz" -O "./giflib.tar.gz"
+wget "https://jaist.dl.sourceforge.net/project/giflib/giflib-5.1.4.tar.bz2" -O "./giflib.tar.gz"
 tar xvf giflib.tar.gz
-mv -f giflib-4.2.3 ./third-party/giflib
+mv -f giflib-5.1.4 ./third-party/giflib
 rm giflib.tar.gz
 
 ## zlib ##
