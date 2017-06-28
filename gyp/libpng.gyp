@@ -13,6 +13,7 @@
         'cflags': [
             '-w',
             '-fvisibility=hidden',
+            '-D PNGLCONF_H'
         ],
         'dependencies': [
             'zlib.gyp:zlib'
