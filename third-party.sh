@@ -2,6 +2,7 @@
 
 ## libpng ##
 wget "https://jaist.dl.sourceforge.net/project/libpng/libpng16/1.6.29/libpng-1.6.29.tar.gz" -O "./libpng.tar.gz"
+tar xvf libpng.tar.gz
 mv -f libpng-1.6.29 ./third-party/libpng
 #fix Linux compile error
 cd ./third-party/libpng/
