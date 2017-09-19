@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+exit 1
+
 ## libpng ##
 wget "https://jaist.dl.sourceforge.net/project/libpng/libpng16/1.6.29/libpng-1.6.29.tar.gz" -O "./libpng.tar.gz"
 tar xvf libpng.tar.gz
