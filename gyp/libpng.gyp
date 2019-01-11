@@ -13,7 +13,6 @@
         'cflags': [
             '-w',
             '-fvisibility=hidden',
-            '-D PNGLCONF_H'
         ],
         'dependencies': [
             'zlib.gyp:zlib'
@@ -38,5 +37,12 @@
             '../third-party/libpng/pngwtran.c',
             '../third-party/libpng/pngwutil.c',
         ],
+        'conditions': [
+            ['OS!="linux"', {
+                'defines': [
+                    'PNGLCONF_H'
+                ]
+            }]
+        ]
     }]
 }
