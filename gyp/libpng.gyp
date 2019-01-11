@@ -40,7 +40,6 @@
         'conditions': [
             ['OS!="linux"', {
                 'defines': [
-                    'PNGLCONF_H'
                 ]
             }]
         ]
