@@ -22,6 +22,14 @@
             '../third-party/giflib/lib/dgif_lib.c',
             '../third-party/giflib/lib/gifalloc.c',
             '../third-party/giflib/lib/gif_err.c',
+            '../third-party/giflib/lib/openbsd-reallocarray.c',
         ],
+        'conditions': [
+            ['OS=="win"', {
+                'include_dirs': [
+                    '../third-party/giflib/',
+                ]
+            }]
+        ]
     }]
 }
